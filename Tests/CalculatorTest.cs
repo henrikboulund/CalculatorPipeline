@@ -1,43 +1,50 @@
 using NUnit.Framework;
+using Services;
 
 namespace Tests
 {
     public class Tests
     {
+        private Calculator Instance;
         [SetUp]
         public void Setup()
         {
-            // Initialize a shared instance of the calculator service here.
+            Instance = new Calculator();
         }
 
         [Test]
         public void AddNumbersWithNoInput()
         {
-            Assert.Inconclusive("Test not fully implemented");
+            var result = Instance.Add();
+            Assert.AreEqual(result, 0);
         }
 
         [Test]
         public void AddTwoPositiveNumbers()
         {
-            Assert.Inconclusive("Test not fully implemented");
+            var result = Instance.Add(45, 5);
+            Assert.AreEqual(result, 50);
         }
 
         [Test]
         public void AddTwoNegativeNumbers()
         {
-            Assert.Inconclusive("Test not fully implemented");
+            var result = Instance.Add(-55, -15);
+            Assert.AreEqual(result, -70);
         }
 
         [Test]
         public void AddThreePositiveNumbers()
         {
-            Assert.Inconclusive("Test not fully implemented");
+            var result = Instance.Add(5, 10, 5);
+            Assert.AreEqual(result, 20);
         }
 
         [Test]
         public void AddThreeNegativeNumbers()
         {
-            Assert.Inconclusive("Test not fully implemented");
+            var result = Instance.Add(-5, -10, -5);
+            Assert.AreEqual(result, -20);
         }
 
         [Test]
