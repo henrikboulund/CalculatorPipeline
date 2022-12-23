@@ -1,8 +1,14 @@
 pipeline{
     agent any
+    triggers
+    {
+        pollSCM("0 * * * *")
+    }
+
     stages{
-        stage("A"){
+        stage("BUILD"){
             steps{
+
                 sh "dotnet build CalculatorPipeline.sln"
             }
             post{
