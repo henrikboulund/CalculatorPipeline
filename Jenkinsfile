@@ -26,12 +26,18 @@ pipeline{
 
         stage("TEST")
         {
-            echo "TESTING!!"
+            steps{
+                echo "TESTING!!"
+            }
+            
         }
 
         stage("DEPLOY")
         {
-            echo 'DEPLOY'
+            steps{
+                echo 'DEPLOY'
+            }
+            
         }
     }
     post{
