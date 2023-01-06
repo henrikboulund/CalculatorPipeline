@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=305e290e_002D6d3a_002D4594_002D8165_002Dde6d4d99e98c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3937B8AD-D2C2-4FA3-B685-EBE1F0421598::.NETFramework,Version=v4.8::Tests.Tests.AddNumbersWithNoInput&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3937B8AD-D2C2-4FA3-B685-EBE1F0421598::.NETFramework,Version=v4.8::Tests.Tests.AddTwoPositiveNumbers&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3937B8AD-D2C2-4FA3-B685-EBE1F0421598::.NETFramework,Version=v4.8::Tests.Tests.AddTwoNegativeNumbers&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3937B8AD-D2C2-4FA3-B685-EBE1F0421598::.NETFramework,Version=v4.8::Tests.Tests.AddThreePositiveNumbers&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3937B8AD-D2C2-4FA3-B685-EBE1F0421598::.NETFramework,Version=v4.8::Tests.Tests.AddThreeNegativeNumbers&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

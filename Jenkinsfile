@@ -23,6 +23,16 @@ pipeline{
                 }
             }
         }
+
+        stage("TEST")
+        {
+            echo "TESTING!!"
+        }
+
+        stage("DEPLOY")
+        {
+            echo 'DEPLOY'
+        }
     }
     post{
         always{
