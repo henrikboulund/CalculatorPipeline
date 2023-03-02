@@ -35,7 +35,7 @@ pipeline{
         stage("DEPLOY")
         {
             steps{
-                echo 'DEPLOY'
+                sh "dotnet test"
             }
             
         }
