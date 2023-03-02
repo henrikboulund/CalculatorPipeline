@@ -28,7 +28,7 @@ pipeline{
         {
             steps
             {
-                sh "dotnet add package coverlet.collector"
+                sh "dotnet add package coverlet.collector --version 3.2.0"
                 sh "dotnet test --collect:'XPlat Code Coverage'"
             }
             post
