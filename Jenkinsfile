@@ -9,7 +9,6 @@ pipeline{
         stage("STARTUP")
         {
             steps{
-                buildDescription env.COMMITMSG
                 dir("tests")
                 {
                     sh "rm -rf TestResults"
