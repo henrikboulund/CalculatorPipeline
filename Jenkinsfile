@@ -28,7 +28,6 @@ pipeline{
         {
             steps
             {
-                sh "dotnet add package coverlet.collector"
                 sh "dotnet test --collect:'XPlat Code Coverage'"
             }
             
