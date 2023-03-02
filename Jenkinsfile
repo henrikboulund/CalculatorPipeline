@@ -11,7 +11,6 @@ pipeline{
             steps{
                 dir("Tests")
                 {
-                    buildDescription env.COMMITMSG
                     sh "rm -rf TestResults"
                 }
             }
