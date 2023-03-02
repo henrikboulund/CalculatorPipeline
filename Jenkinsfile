@@ -30,6 +30,14 @@ pipeline{
             {
                 sh "dotnet test --collect:'XPlat Code Coverage'"
             }
+            post
+            {
+                success
+                {
+                    archiveArtifacts "CalculatorPipeline/TestResults/*/coverage.cobertura.xml"
+                    publishCoverage adapters: [istanbulCoberturaAdapter(path: 'TestProject1/TestResults/*/coverage.cobertura.xml', thresholds: [[failUnhealthy: true, thresholdTarget: 'Conditional', unhealthyThreshold: 80.0, unstableThreshold: 50.0]])], checksName: '', sourceFileResolver: sourceFiles('NEVER_STORE')
+                }
+            }
             
         }
 
