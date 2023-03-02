@@ -2,7 +2,7 @@ pipeline{
     agent any
     triggers
     {
-        pollSCM("0 * * * *")
+        pollSCM("* * * * *")
     }
 
     stages{
@@ -27,7 +27,7 @@ pipeline{
         stage("TEST")
         {
             steps{
-                echo "TESTING!!"
+                sh "dotnet test"
             }
             
         }
@@ -35,7 +35,7 @@ pipeline{
         stage("DEPLOY")
         {
             steps{
-                sh "dotnet test"
+                echo "DEPLOY!!!"
             }
             
         }
